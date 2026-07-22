@@ -628,28 +628,28 @@ Email: service@kingtuckelectric.com
 
 
 
-<form>
+<form action="https://formspree.io" method="POST">
 
 
 <label>Name</label>
 
-<input type="text" placeholder="Your Name">
+<input type="text" name="name" placeholder="Your Name" required>
 
 
 <label>Phone</label>
 
-<input type="tel" placeholder="Your Phone Number">
+<input type="tel" name="phone" placeholder="Your Phone Number" required>
 
 
 <label>Email</label>
 
-<input type="email" placeholder="Your Email">
+<input type="email" name="_replyto" placeholder="Your Email" required>
 
 
 <label>Service Needed</label>
 
 
-<select>
+<select name="service_needed">
 
 <option>Electrical Repair</option>
 
@@ -669,7 +669,7 @@ Email: service@kingtuckelectric.com
 
 <label>Message</label>
 
-<textarea rows="5" placeholder="Describe your project"></textarea>
+<textarea name="message" rows="5" placeholder="Describe your project" required></textarea>
 
 
 
@@ -719,3 +719,4 @@ Serving Hampton Roads, Virginia
 </body>
 
 </html>
+
